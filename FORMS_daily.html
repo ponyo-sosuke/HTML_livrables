@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" initial-scale="1.0" http-equiv="content-type" />
+<title>
+= FORMULAIRE =
+</title>
+</head>
+<body>
+    <p>FORMULAIRE A REMPLIR</p>
+ 
+    <form>
+        
+        <!-- Coordonnees NP -->
+        <label for="prenom">Pr&eacute;nom* :</label>
+        <input type="text" id="Pr&eacute;nom" name="Pr&eacute;nom" size="30"><br><br>
+        
+        <label for="nom">Nom* :</label>
+        <input type="text" id="nom" name="Nom" size="30"><br><br>
+        
+        <!-- Genres -->
+        <label>Genre :</label><br><br>
+        <input type="radio" name="Femme" value="femme">
+	    <label>Femme</label><br><br>
+        <input type="radio" name="Homme" value="homme">
+	    <label>Homme</label><br><br>
+        <input type="radio" name="autre" value="autre">
+	    <label>Autre(s)</label><br><br>
+        
+        <!-- Adresse -->
+
+        
+        <!-- CP Ville -->
+        <label for="codepostal">Code Postal* :</label>
+        <input type="text" id="codepostal" name="codepostal" required
+        length="5" size="5" 
+        pattern="[0-9]{5}" title="5chiffres"><br><br>
+        
+        <label for="nom">Ville* :</label>
+        <input type="text" id="ville" name="Ville" size="25"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email* :</label>
+        <input type="email" id="email" name="email" size="30"><br><br>
+        
+        <!-- Metier -->
+        <label for="metier">M&eacute;tier exerc&eacute; :</label>
+        <input type="text" id="metier" name="metier" size="25"><br><br>
+
+        <!-- Nationalite -->
+
+        <label for="nationalite">Nationalit&eacute; :</label>
+        <select name="nom" size="1">
+            <option>France</option>
+            <option>Ghibli</option>
+            <option>Lune</option>
+            <option>Mars</option>
+            <option>Venus</option>
+        </select><br><br>
+
+        <!-- Nationalite -->
+        <label for=pays>Nationalité :</label>
+        <input id=pays name=pays type=text required>
+        <br><br>
+          
+
+        <!-- Date Naissance -->
+        <label for="birthday">Date de naissance :</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <!-- CP Ville -->
+        <label for="numsecu">Num&eacute;ro de s&eacute;curit&eacute; sociale :</label>
+        <input type="text" id="numsecu" name="numsecu" 
+        pattern="[0-9]{4}" title="5chiffres"><br><br>
+
+        <label for="numpasseport">Num&eacute;ro du passeport :</label>
+        <input type="text" id="numpasseport" name="numpasseport" required
+        length="9" size="9" 
+        pattern="[0-9-A-Z-a-z]{9}" title="9caracteres"><br><br>
+
+        <!-- Documents -->
+        <label for="passeport">Date de d&eacute;livrance passeport :</label>
+        <input type="date" id="passeport" name="passeport"><br><br>
+
+        <label for="validite">Date de validit&eacute; :</label>
+        <input type="date" id="validite" name="validite"><br><br>
+
+        <!-- Bouton validation -->
+        <button>Valider</button>
+
+      </form>
+</body>
+</html>
